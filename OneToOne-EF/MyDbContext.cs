@@ -18,7 +18,7 @@ namespace OneToOne_EF
             optionsBuilder.UseSqlServer(connectionString);
         }
 
-        protected override void OnModelCreating(ModelBuilder ModelBuilder)
+        protected override void OnModelCreating(ModelBuilder ModelBuilder) 
         {
             ModelBuilder.Entity<Students>().HasData(new Students { Id = 1, FirstName = "Saad", LasttName = "Sabah"});
             ModelBuilder.Entity<Students>().HasData(new Students { Id = 2, FirstName = "Ali", LasttName = "Maseer"});
